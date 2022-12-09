@@ -1,10 +1,25 @@
-require('dotenv').config();
-const mysql = require('mysql2');
+const mysql =  require('mysql2');
 const inquirer = require('inquirer');
 const express = require('express');
 require('console.table');
-const app = express();
-const db = require("./db");
+//const db = require("./db");
+
+require('dotenv').config()
+
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: process.env.KEY,
+  database: 'company',
+});
+
+module.exports = connection;
+
+connection.connect(err => {
+  if (err) throw err;
+  console.log('connected as id ' + connection.threadId);
+  Initialize();
+});
 
 const exit = () => {
     console.log("Bye!");
