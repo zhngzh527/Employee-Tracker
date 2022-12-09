@@ -19,11 +19,11 @@ VALUES
 
 INSERT INTO employee(id, first_name, last_name, role_id, manager_id)
 VALUES
-(1, "John", "Doe", 1, 1),
-(2, "Mike", "Chan", 2, 2),
-(3, "Ashley", "Rodriguez", 3, 3),
-(4, "Kevin", "Tupik", 4, 1),
-(5, "Malia", "Brown", 5, 2),
-(6, "Sarah", "Lourd", 6, 3),
-(7, "Tom", "Allen", 7, 2),
-(8, "Christian", "Eckenrode", 3, 3);
+(1, "David", "de Gea", 1, 1),
+(2, "Diogo", "Dalot", 2, 2),
+(3, "Luke", "Shaw", 3, 3),
+(4, "Bruno", "Fernandes", 4, 1),
+(5, "Christian", "Eriksen", 5, 2),
+(6, "Anthony", "Martial", 6, 3),
+(7, "Jadon", "Sancho", 7, 2),
+(8, "Marcus", "Rashford", 3, 3);
