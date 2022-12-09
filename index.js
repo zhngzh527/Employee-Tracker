@@ -22,7 +22,6 @@ connection.connect(err => {
 });
 
 const exit = () => {
-    console.log("Bye!");
     process.exit(0);
   };
   const mainMenu = async () => {
