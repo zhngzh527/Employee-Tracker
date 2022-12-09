@@ -4,6 +4,7 @@ const inquirer = require('inquirer');
 const express = require('express');
 require('console.table');
 const app = express();
+const db = require("./db");
 
 const exit = () => {
     console.log("Bye!");
